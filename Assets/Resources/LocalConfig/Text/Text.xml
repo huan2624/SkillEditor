@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!--
+id:	文本id
+
+type:显示类型;
+	1 : 冒泡;
+	2 : 弹框;
+	3 : 替换;
+	4 : 转义;
+	5 : 提示;
+	6 ：提示;
+
+content：内容
+	4 ：金币:\jb
+	5 : 钻石:\zs
+-->
+<!--
+	编号管理：1110XX技能系统, 1111XX队伍管理, 1112XX装备系统, 1113XX好友系统, 1114XX邮件系统, 1115XX聊天系统, 1116XX关卡系统, 1117XX竞技场, 1118XX商城系统, 1119XX雅典娜系统, 1120XX体力, 1121XX挑战模式预留1, 1122XX极限挑战,
+	1123XXBOSS战, 1125XX在线奖励, 1126XX签到系统, 1127XX挑战模式预留2, 1128XX密室逃脱, 1129XX成就系统, 1130XX任务系统, 1140XXvip系统, 1141XX首充系统， 1150XX背包系统, 1161XX家族朝拜， 1162XX家族建设，1163XX家族管理
+	1164XX成员管理,1165XX申请家族，1166XX家族boss,1167XX家族战队,1170xx领取体力,1171xx家族成长,1172xx冲级奖励,1181xx修改名字
+-->
+
+
+<TextList>
+	<!-- 系统预留 -->
+	<Text id = "-1" type = "1" content = "%s"/>
+	<Text id = "-2" type = "2" content = "%s"/>
+	<Text id = "0" type = "2" content = "成功"/>
+	<Text id = "1" type = "1" content = "文本类型1%s"/>
+	<Text id = "2" type = "2" content = "文本类型2%s"/>
+	<Text id = "6" type = "6" content = "文本类型6%s"/>
+	<Text id = "7" type = "7" content = "文本类型7%s"/>
+	<Text id = "101" type = "6" content = "系统错误"/>
+	<Text id = "102" type = "6" content = "参数错误"/>
+	<Text id = "103" type = "2" content = "角色尚未登录"/>
+	<Text id = "104" type = "6" content = "材料不足"/>
+	<Text id = "105" type = "6" content = "找不到英雄"/>
+	<Text id = "106" type = "2" content = "金币不足"/>
+	<Text id = "107" type = "2" content = "钻石不足"/>
+	<Text id = "108" type = "6" content = "金币达到上限"/>
+	<Text id = "109" type = "2" content = "名字重复"/>
+	<Text id = "110" type = "2" content = "角色已经在别处登录"/>
+	<Text id = "111" type = "6" content = "体力不足"/>
+	<Text id = "112" type = "6" content = "角色已在其他服务器登录"/>
+	<Text id = "113" type = "6" content = "密码错误"/>
+	<Text id = "114" type = "6" content = "角色等级不足"/>
+	<Text id = "115" type = "6" content = "找不到配置"/>
+	<Text id = "116" type = "6" content = "找不到用户"/>
+	<Text id = "117" type = "6" content = "功勋不足"/>	
+	<Text id = "118" type = "2" content = "VIP等级不足"/>
+	<Text id = "119" type = "6" content = "请求超时"/>
+	<Text id = "120" type = "1" content = "配置错误"/>
+	<Text id = "121" type = "1" content = "额外奖励"/>
+	
+	<!--900-1000客户端系统预留-->
+	<Text id = "901" type = "1" content = "网络已断开，点击重新连接"/>
+	<Text id = "902" type = "1" content = "正在拼命连接中......"/>
+	<Text id = "903" type = "1" content = "已退出登录，点击重新登录"/>
+	<Text id = "904" type = "1" content = "正在拼命加载服务器列表..."/>
+	
+  
+	<!-- 技能系统 -->
+	<Text id = "1001" type = "6" content = "技能槽数已经达到最大值"/>
+	<Text id = "1002" type = "6" content = "英雄没有该技能"/>
+	<Text id = "1003" type = "6" content = "英雄技能已经存在"/>
+	<Text id = "1004" type = "6" content = "技能已经是最高等级"/>	
+	<Text id = "1005" type = "6" content = "技能槽已经是开启的"/>
+	<Text id = "1006" type = "6" content = "找不到英雄的固定技能"/>
+	<Text id = "1007" type = "6" content = "找不到可用的槽位"/>
+	<Text id = "1008" type = "6" content = "开启技能槽失败"/>	
+	<Text id = "1009" type = "6" content = "升级技能失败"/>
+	<Text id = "1010" type = "6" content = "技能槽未开启"/>
+	<Text id = "1011" type = "6" content = "技能槽中已经有技能"/>
+	<Text id = "1012" type = "6" content = "背包中没有此技能"/>	
+	<Text id = "1013" type = "6" content = "替换技能时技能槽中没有技能"/>
+	<Text id = "1014" type = "6" content = "天赋槽已经是开启的"/>
+	<Text id = "1015" type = "6" content = "开天赋槽时星级不够"/>
+	<Text id = "1016" type = "6" content = "天赋槽未开启"/>	
+	<Text id = "1017" type = "6" content = "天赋槽中已有天赋"/>
+	<Text id = "1018" type = "6" content = "角色没有此天赋"/>
+	<Text id = "1019" type = "6" content = "英雄天赋已经存在"/>
+	<Text id = "1020" type = "6" content = "替换天赋时天赋槽中没有天赋"/>	
+	<Text id = "1021" type = "6" content = "学习技能时英雄的等级不够"/>	
+	<Text id = "1022" type = "6" content = "学习的技能与该技能槽默认的技能不匹配"/>
+	<Text id = "1023" type = "6" content = "QTE已经升级到顶级"/>
+	<Text id = "1024" type = "6" content = "天敌关系已经升级到顶级"/>
+	<Text id = "1025" type = "6" content = "天敌关系升级时找不到对应的英雄"/>
+	<Text id = "1026" type = "6" content = "天敌关系升级时英雄星级不足"/>	
+	<Text id = "111022" type = "6" content = "英雄升级到%s星时解锁"/>	
+	<Text id = "111023" type = "1" content = "合成技能%s成功"/>
+	<Text id = "111024" type = "6" content = "没有技能"/>
+	<Text id = "111025" type = "1" content = "技能学习到%s级"/>
+	<Text id = "111026" type = "1" content = "技能学习成功"/>
+	<Text id = "111027" type = "1" content = "升级成功"/>
+	<Text id = "111028" type = "6" content = "星级不够，请升星级哦"/>
+	<!-- 队伍管理 -->
+	<Text id = "1101" type = "6" content = "向队伍添加英雄的位置非空"/>	
+	<Text id = "1102" type = "6" content = "向队伍添加英雄时此英雄已出战"/>	
+	<Text id = "1103" type = "6" content = "删除队伍英雄时此英雄未出战"/>	 
+	<Text id = "1105" type = "6" content = "材料不足"/>	
+	<Text id = "1106" type = "6" content = "钻石不足"/>	
+	<Text id = "1107" type = "6" content = "英雄已经升到最高等级"/>	
+	<Text id = "1108" type = "6" content = "英雄升星时未达到最高等级"/>	
+	<Text id = "1109" type = "6" content = "出战队列已满，不能再添加出战英雄"/>	
+	<Text id = "1110" type = "6" content = "队伍英雄此时不在此位置上"/>	
+	<Text id = "1111" type = "6" content = "英雄吸魂升级时被删除的英雄在出战队伍中"/>	
+	<Text id = "1112" type = "6" content = "队长不能退队"/>	
+	<Text id = "1113" type = "6" content = "升星时经验不足"/>	
+	<Text id = "1114" type = "6" content = "吸魂升级时传的hero_gid有重复"/>	
+	<Text id = "1115" type = "6" content = "英雄达到最高星级"/>	
+	<Text id = "1116" type = "6" content = "同样的英雄已经在队伍中"/>	
+	<Text id = "1117" type = "6" content = "英雄已经升级到最高颜色的最高等级"/>	
+	<Text id = "1118" type = "6" content = "吸魂升级时传的道具id有重复"/>	
+	<Text id = "1119" type = "6" content = "该角色已有相同的英雄"/>	
+	<Text id = "1120" type = "1" content = "该角色所有英雄退队"/>
+	<Text id = "1121" type = "6" content = "该英雄不能通过魂石合成来获得"/>
+	<Text id = "1122" type = "6" content = "英雄进阶成功"/>
+	<Text id = "1123" type = "1" content = "基础攻击:[ffff00]%S-[ff00ff]%s"/>	
+	<Text id = "1124" type = "1" content = "力量成长:%s"/>	
+	<Text id = "1125" type = "1" content = "敏捷成长:%s"/>	
+	<Text id = "1126" type = "1" content = "智力成长:%s"/>	
+	<Text id = "1127" type = "7" content = "[8C8C00]智力:%s"/>	
+	<Text id = "1128" type = "7" content = "[8C8C00]力量:%s"/>	
+	<Text id = "1129" type = "7" content = "[8C8C00]敏捷:%s"/>	
+	<Text id = "1130" type = "7" content = "[8C8C00]敏捷:%s"/>	
+	<Text id = "1131" type = "7" content = "[8C8C00]生命:%s"/>	
+	<Text id = "1132" type = "7" content = "[8C8C00]物理攻击:%s"/>	
+	<Text id = "1133" type = "7" content = "[8C8C00]防御:%s"/>	
+	<Text id = "1134" type = "7" content = "[8C8C00]命中:%s"/>	
+	<Text id = "1135" type = "7" content = "[8C8C00]闪避:%s"/>	
+	<Text id = "1136" type = "7" content = "[8C8C00]暴击:%s"/>	
+	<Text id = "1137" type = "7" content = "[8C8C00]韧性:%s"/>
+	<Text id = "1138" type = "6" content = "战队升级后才可升级英雄"/>
+	<Text id = "1139" type = "6" content = "尚未获得该阵容所有英雄"/>
+	<Text id = "1140" type = "6" content = "已使用当前阵容"/>
+	<Text id = "1141" type = "7" content = "%s"/>
+	<Text id = "1142" type = "7" content = "队伍战斗力%s"/>
+	<Text id = "1143" type = "7" content = "队伍已满"/>
+	<Text id = "1144" type = "6" content = "未获得该英雄"/>
+	<Text id = "1145" type = "6" content = "英雄尚未装备专属装备"/>
+
+	<Text id = "115000" type = "6" content = "英雄星级已达上限"/>
+	<Text id = "115001" type = "6" content = "没有足够的魂魄"/> 
+	<Text id = "115002" type = "6" content = "没有足够的强化石"/>
+	<Text id = "115003" type = "6" content = "升星成功"/>
+	
+	<!-- 装备系统 -->
+	<Text id = "1201" type = "6" content = "装备不存在"/>	
+	<Text id = "1203" type = "6" content = "已经使用了同样的装备"/>	
+	<Text id = "1204" type = "6" content = "装备不属于一个套装"/>	
+	<Text id = "1205" type = "6" content = "装备已经穿戴过"/>	
+	<Text id = "1206" type = "6" content = "物品不可出售"/>	
+	<Text id = "1207" type = "6" content = "装备配置错误"/>
+	<Text id = "1208" type = "6" content = "道具配置错误"/>
+	<Text id = "1209" type = "6" content = "材料不存在"/>
+	<Text id = "1210" type = "6" content = "装备没有穿在该英雄身上"/>
+	<Text id = "1211" type = "6" content = "找不到合成配置"/>
+	<Text id = "1212" type = "6" content = "装备不是合成消耗的装备"/>
+	<Text id = "1213" type = "6" content = "找不到套装的配置"/>
+	<Text id = "1214" type = "6" content = "找不到套装的配置阶数小于等于当前套装晶石的阶数"/>
+	<Text id = "1215" type = "6" content = "套装槽已经穿戴了别的装备"/>
+	<Text id = "1216" type = "6" content = "找不到套装穿戴配置"/>
+	<Text id = "1217" type = "6" content = "找不到可用的装备槽"/>
+	<Text id = "1218" type = "6" content = "背包空间不足"/>
+	<Text id = "1219" type = "6" content = "物品不可使用"/>
+	<Text id = "1220" type = "6" content = "礼包配置错误"/>
+	<Text id = "1221" type = "6" content = "使用材料失败"/>
+	<Text id = "1222" type = "6" content = "套装类型错误"/>	
+	<Text id = "1223" type = "6" content = "背包中没有足够的指定装备"/>
+	<Text id = "1224" type = "6" content = "装备等级不能超过英雄当前等级"/>
+
+	<Text id = "1251" type = "6" content = "装备强化材料配置错误"/>
+	<Text id = "1252" type = "6" content = "装备强化ID配置错误"/>
+	<Text id = "1253" type = "6" content = "装备附魔次数配置错误"/>
+	<Text id = "1254" type = "6" content = "装备附魔次数已达上限"/>
+	<Text id = "1255" type = "6" content = "装备附魔材料配置错误"/>
+	<Text id = "1256" type = "6" content = "增加装备错误"/>
+	<Text id = "1257" type = "6" content = "增加材料错误"/>
+	<Text id = "1258" type = "6" content = "增加最高星级配置错误"/>
+	<Text id = "1259" type = "6" content = "英雄升级到最高颜色最高星级"/>
+	<Text id = "1260" type = "6" content = "晶石阶数错误"/>
+	<Text id = "1261" type = "6" content = "晶石升级配置错误"/>
+	<Text id = "1262" type = "6" content = "晶石升级到最高级颜色"/>
+	<Text id = "1263" type = "6" content = "装备强化升星错误"/>
+	<Text id = "1264" type = "6" content = "装备强化升颜色错误"/>
+	<Text id = "1265" type = "6" content = "增加技能错误"/>
+	<Text id = "1266" type = "6" content = "增加技能碎片错误"/>
+	<Text id = "111267" type = "6" content = "只有穿满一套同样颜色的装备才可以飞升"/>
+	<Text id = "111268" type = "6" content = "已经满级"/>
+	<Text id = "111269" type = "1" content = "合成装备%s成功"/>
+	<Text id = "111270" type = "6" content = "没有装备"/>
+	<Text id = "111271" type = "1" content = "装备升阶到%s"/>
+	<Text id = "111272" type = "1" content = "装备升级到%s级"/>
+	<Text id = "111273" type = "6" content = "未开放，敬请期待"/>
+	<Text id = "111274" type = "6" content = "没有对应的装备"/>
+	<Text id = "111275" type = "6" content = "材料不足！"/>
+	<Text id = "111276" type = "6" content = "升阶成功"/>
+	<Text id = "111277" type = "6" content = "英雄已经升到顶级"/>
+	<Text id = "111278" type = "1" content = "装备成功！"/>
+	<Text id = "111279" type = "1" content = "装备分解成功！"/>
+	<Text id = "111280" type = "1" content = "装备合成成功！"/>
+	<Text id = "111281" type = "2" content = "是否花费[00EEEE]%s[-]个[9A32CD]%s[-]合成[9ACD32]%s[-]？"/>
+	<Text id = "111282" type = "1" content = "请选择需要合成的装备"/> 
+	<Text id = "111283" type = "6" content = "4星及4星以上的英雄才能开启专属装备"/>
+	<!-- 好友系统 -->
+	<Text id = "1301" type = "6" content = "未找到符合条件的好友"/>
+	<Text id = "1302" type = "6" content = "找不到好友验证记录"/>
+	<Text id = "1303" type = "6" content = "对方好友数目已达上限"/>
+	<Text id = "1304" type = "2" content = "好友验证数达到上限"/>
+	<Text id = "1305" type = "2" content = "不能添加自己为好友"/>
+	<Text id = "111306" type = "6" content = "删除好友成功"/>
+	<Text id = "111307" type = "1" content = "成功收取%s点体力"/>
+	<Text id = "111308" type = "1" content = "已成功发送好友请求"/>
+	<Text id = "111309" type = "2" content = "您的好友数目已达上限"/>
+	<Text id = "111310" type = "1" content = "添加好友成功"/>
+	<Text id = "111311" type = "6" content = "好友申请已拒绝"/>
+	<Text id = "111312" type = "3" content = "领取%s"/>
+	<Text id = "111313" type = "3" content = "赠送%s"/>
+	<Text id = "111314" type = "3" content = "在线"/>
+	<Text id = "111315" type = "3" content = "离线"/>
+	<Text id = "111316" type = "6" content = "挑战系统暂未开放"/>
+	<Text id = "111317" type = "6" content = "请输入玩家ID"/>
+	<Text id = "111318" type = "6" content = "当前好友不在线"/>
+	<Text id = "111319" type = "6" content = "删除好友【[-][ffffff]%s[-]】?"/>
+	<!-- 邮件系统 -->
+	<Text id = "1401" type = "6" content = "获取的邮件不存在"/>
+	<Text id = "1402" type = "6" content = "不能给自己发邮件"/>
+	<Text id = "1403" type = "6" content = "发送邮件类别错误"/>
+	<Text id = "1404" type = "6" content = "发送邮件数量错误"/>
+	<Text id = "1405" type = "6" content = "发送装备的数量错误，只能为1"/>
+	<Text id = "1406" type = "6" content = "体力已满，不能领取"/>
+	<Text id = "111407" type = "1" content = "领取成功"/>
+	<Text id = "111408" type = "2" content = "背包已满，请清理后领取"/>
+	<Text id = "111409" type = "2" content = "该邮件存在尚未领取的附件，是否删除？"/>
+	<!-- 聊天系统 -->
+	<Text id = "1501" type = "6" content = "发送失败，内容过长"/>
+	<Text id = "1502" type = "6" content = "发送失败，内容包含敏感词汇"/>
+	<Text id = "1503" type = "6" content = "发送频率过快，请稍后"/>
+	<Text id = "1504" type = "6" content = "该用户被加入黑名单，禁止发言"/>
+	<Text id = "1505" type = "6" content = "发送内容不能为空"/>
+	<Text id = "1506" type = "6" content = "发送消息等级不够"/>
+	<Text id = "1507" type = "2" content = "请选择目标玩家"/>
+	<Text id = "1508" type = "6" content = "好友不在线"/> 
+	<Text id = "111510" type = "6" content = "小喇叭数量不足！"/>
+	<Text id = "111511" type = "6" content = "当前没有私聊对象！"/>
+  <Text id = "111512" type = "1" content = "购买成功"/>
+  <Text id = "111513" type = "6" content = "不能选择自己"/>
+	<!-- 关卡系统 -->
+	<Text id = "1601" type = "6" content = "前置关卡还没完成"/>
+	<Text id = "1602" type = "6" content = "关卡的前置难度还没完成"/>
+	<Text id = "1603" type = "6" content = "复活次数达到上限"/>
+	<Text id = "1604" type = "6" content = "灵元已经到达上限"/>
+	<Text id = "1605" type = "6" content = "关卡已经结束"/>
+	<Text id = "1606" type = "6" content = "关卡已经抽奖"/>
+	<Text id = "1607" type = "6" content = "消耗时间错误"/>
+	<Text id = "1608" type = "6" content = "关卡战斗失败，不能抽取奖励"/>
+	<Text id = "1609" type = "6" content = "上战场的英雄与出战列表不同"/>
+	<Text id = "1610" type = "6" content = "该关卡尚未通关"/>
+	<Text id = "1611" type = "6" content = "已经领取了章节奖励"/>
+	<Text id = "1612" type = "6" content = "条件未达到，不能领取章节奖励"/>
+	<Text id = "1613" type = "6" content = "背包中没有足够的扫荡卡(供扫荡)"/>
+	<Text id = "1614" type = "6" content = "今日剩余可扫荡次数不足"/>
+	<Text id = "1615" type = "6" content = "该关卡的今日可挑战次数不足"/>			
+	<Text id = "1616" type = "6" content = "关卡获得3颗星才能扫荡"/>			
+  <Text id = "1617" type = "2" content = "是否花费[00FF00]%s[-]#ty-zuanshi; 重置挑战次数?今日剩余重置次数 %s / %s"/>			
+	<Text id = "1618" type = "6" content = "请提升到VIP%s才可以扫荡多次"/>			
+	
+	<Text id = "111601" type = "6" content = "当前关卡尚未开启"/>			
+
+	<!-- 竞技场 -->
+	<Text id = "1701" type = "6" content = "找不到竞技场限制的配置文件"/>
+	<Text id = "1702" type = "6" content = "竞技场重置次数达到上限"/>
+	<Text id = "1703" type = "6" content = "竞技场已经结束"/>
+	<Text id = "1704" type = "6" content = "找不到竞技场奖励的配置文件"/>
+	<Text id = "1705" type = "6" content = "竞技场参数错误"/>
+	<Text id = "1706" type = "6" content = "竞技场挑战次数已经达到上限"/>
+	<Text id = "1707" type = "6" content = "竞技场对手正在战斗中"/>
+	<Text id = "1708" type = "6" content = "正被别人攻击"/>
+  <Text id = "1709" type = "6" content = "竞技场中找不到敌人"/>
+  <Text id = "1710" type = "6" content = "竞技场积分不足"/>
+  <Text id = "1711" type = "6" content = "名次不匹配，不能打竞技场"/>
+	<Text id = "111709" type = "1" content = "你对[94e447][%s][-]发起了挑战，你%s了！排名升为[ffef3a]%s[-]"/>
+	<Text id = "111710" type = "1" content = "你对[94e447][%s][-]发起了挑战，你%s了！排名保持不变"/>
+	<Text id = "111711" type = "1" content = "[94e447][%s][-]对你发起了挑战，你%s了！排名保持不变"/>
+	<Text id = "111712" type = "1" content = "[94e447][%s][-]对你发起了挑战，你%s了！排名降为[ffef3a]%s[-]"/>
+  <Text id = "111713" type = "1" content = "[ff3a3a]胜利[-]"/>
+  <Text id = "111714" type = "1" content = "[868686]失败[-]"/>
+  <Text id = "111715" type = "6" content = "玩家不在线！"/>
+  <Text id = "111716" type = "6" content = "是否花费[00FF00]%s积分[-],购买[00FFFF]%s[-]！"/>
+  <Text id = "111717" type = "6" content = "是否花费[00FF00]%s[-]#ty-zuanshi;,刷新列表！"/>
+  <Text id = "111718" type = "6" content = "    你的免费次数已用完,本次挑战需要花费[00FF00]%s#ty-zuanshi;[-],是否继续！还剩下[00FF00]%s[-]次。"/>
+  <Text id = "111719" type = "1" content = "[ff3a3a]购买成功！"/>
+  <Text id = "111720" type = "6" content = "你所挑战的对手排名已经发生变化！"/>
+	<!-- 商城系统 -->
+	<Text id = "1801" type = "6" content = "商品已售罄"/>
+	<Text id = "1802" type = "6" content = "该商品今日不售卖"/>
+	<Text id = "1803" type = "6" content = "[FFC125]你已购买该活动卡，在到期前一天才可继续购买"/>
+	<Text id = "1804" type = "6" content = "已经领取过充值奖励"/>
+	<Text id = "1805" type = "6" content = "没有可领取的奖励	"/> 
+	<Text id = "1806" type = "6" content = "普通商店刷新次数超过上限	"/> 
+	
+	
+	<Text id = "111801" type = "6" content = "[FFC125]今日已购买，无法再次刷新"/>
+	<Text id = "111802" type = "6" content = "商品已售罄"/> 
+	<Text id = "111804" type = "6" content = "[FFC125]购买成功"/>
+	<Text id = "111805" type = "6" content = "该商场VIP%s开启"/>
+  <Text id = "111806" type = "2" content = "是否购买%s"/>			
+
+	<!-- 雅典娜系统 -->
+	<Text id = "1901" type = "6" content = "找不到雅典娜限制的配置文件"/>
+	<Text id = "1902" type = "6" content = "免费重置次数已达上限"/>
+	<Text id = "1903" type = "6" content = "本日重置次数已达上限"/>
+	<Text id = "1904" type = "6" content = "雅典娜已经结束"/>
+	<Text id = "1905" type = "6" content = "找不到雅典娜刷怪的配置文件"/>
+	<Text id = "1906" type = "6" content = "本关卡的宝箱已开过了，不能再开"/>
+	<Text id = "1907" type = "6" content = "积分不够，无法兑换指定商品"/>
+	<Text id = "111906" type = "1" content = "重置成功"/>
+	<Text id = "111907" type = "1" content = "第%s波"/>
+	<Text id = "111908" type = "1" content = "强敌偷袭！"/>
+  <Text id = "111909" type = "6" content = "当前没有英雄！"/>
+  <Text id = "111910" type = "6" content = "英雄重复！"/>
+  <Text id = "111911" type = "6" content = "    你的免费次数已用完,本次挑战需要花费[00FF00]%s#ty-zuanshi;[-],是否继续！还剩下[00FF00]%s[-]次。"/>
+  <Text id = "111912" type = "6" content = "是否花费[00FF00]%s荣誉[-],购买[00FFFF]%s[-]！"/>
+  <Text id = "111913" type = "1" content = "雅典娜已经死亡，本次挑战失败，请重新再来！"/>
+  <Text id = "111914" type = "1" content = "你本次已经守护成功，请再次再来！"/>
+  <Text id = "111915" type = "6" content = "确定需要重新开始，重新开始会消耗挑战次数！"/>
+	<!-- 体力 -->
+	<Text id = "2001" type = "6" content = "购买体力次数已用完"/>
+	<Text id = "2002" type = "6" content = "体力超过最大值"/>
+	<Text id = "2003" type = "6" content = "体力超过上限"/>
+	<Text id = "2102" type = "6" content = "密室逃脱达到重置上限"/>
+	<Text id = "2103" type = "6" content = "达到了最大的挑战次数"/>
+  <!-- 补刀 -->
+  <Text id = "2201" type = "6" content = "补刀的次数超过当天上限"/>
+  <Text id = "112202" type = "1" content = "补刀成功"/> 
+  <!-- 挑战模式预留1 -->
+	<Text id = "112101" type = "1" content = "重置成功"/>
+	<!-- 极限挑战 -->
+	<Text id = "112201" type = "1" content = "重置成功"/>
+	<Text id = "112202" type = "2" content = "恭喜您,在极限挑战中获得第%s名"/>
+	<!-- BOSS战 -->
+	<Text id = "112301" type = "2" content = "恭喜您,在boss战中伤害排名第%s名"/>
+	<!-- 在线奖励 -->
+	<Text id = "112501" type = "1" content = "领取成功"/>
+	<Text id = "112502" type = "4" content = "领取在线礼包？"/>
+  <Text id = "2702" type = "6" content = "该奖励已被领取过，不能再领了"/>
+  <Text id = "2703" type = "6" content = "未到该奖励的领取时间"/>
+	<!-- 签到系统 -->
+	<Text id = "112601" type = "1" content = "签到成功"/>
+	<Text id = "112602" type = "1" content = "领取成功"/>
+	<Text id = "112603" type = "3" content = "尚未达成"/>
+	<Text id = "112604" type = "3" content = "点击获得"/>
+	<Text id = "112605" type = "6" content = "尚未达成不能领取"/>
+	<Text id = "112606" type = "6" content = "不可重复签到"/>
+	<Text id = "112607" type = "6" content = "不可重复领取"/>
+	<Text id = "112608" type = "1" content = "成功领取"/>
+	<Text id = "112609" type = "6" content = "尚未达成"/>
+	<Text id = "112610" type = "1" content = "您已全部补签"/>
+	<Text id = "112611" type = "1" content = "购买成功"/>
+	<Text id = "112612" type = "4" content = "是否花费%s#ty-zuanshi;补签？"/>
+	<Text id = "112613" type = "1" content = "补签成功"/>
+	<!-- 挑战模式预留2 -->
+	<Text id = "112701" type = "1" content = "重置成功"/>
+	<!-- 密室逃脱 -->
+	<Text id = "112801" type = "1" content = "重置成功"/>
+	<Text id = "112802" type = "6" content = "请选择正确的传送门"/>
+	<Text id = "112803" type = "2" content = "本次挑战需要%s#ty-zuanshi;是否继续?%s本日剩余%s次"/>
+	<!-- 成就系统 -->
+	<Text id = "112901" type = "1" content = "成功领取奖励"/>
+	<Text id = "112902" type = "6" content = "背包已满，请清理后领取"/>
+	<Text id = "112903" type = "1" content = "达成成就:%s"/>
+	<!-- 任务系统 -->
+	<Text id = "113001" type = "7" content = "完成任务：%s"/>
+	<Text id = "113002" type = "7" content = "获得英雄：%s"/>
+	<Text id = "113003" type = "7" content = "获得装备：%s"/>
+	<Text id = "113004" type = "7" content = "获得物品：%s"/>
+	<Text id = "113005" type = "7" content = "获得碎片：%s"/>
+	<Text id = "113006" type = "7" content = "获得技能书：%s"/>
+	<Text id = "113007" type = "7" content = "获得金币：%s"/>
+	<Text id = "113008" type = "7" content = "获得钻石：%s"/>
+	<Text id = "113009" type = "7" content = "获得体力：%s"/>
+	<Text id = "113010" type = "6" content = "该任务入口未开放"/>
+	<Text id = "113011" type = "6" content = "世界Boss系统未开放"/>
+	<!-- VIP特权 -->
+	<Text id = "114001" type = "3" content = "累计充值[55ff00]{0}[-]钻石即可享受该级特权。"/>
+	<Text id = "114002" type = "3" content = "每天可购买体力[55ff00]{0}[-]次。"/>
+  <Text id = "114003" type = "3" content = "体力上限增加[55ff00]{0}[-]。"/>
+	<Text id = "114004" type = "3" content = "每天可赠送扫荡卷[55ff00]{0}[-]个。"/>
+  <Text id = "114005" type = "3" content = "开启关卡中扫荡10次的功能。"/>
+	<Text id = "114006" type = "3" content = "每天可使用补刀[55ff00]{0}[-]次。"/>
+  <Text id = "114007" type = "3" content = "补刀时一定几率获得[55ff00]{0}[-]倍金币。"/>
+	<!-- 114007的值为1的时候不显示 -->
+	<Text id = "114008" type = "6" content = "升级到VIP.[55ff00]%s[-]即可购买"/>
+	<Text id = "114009" type = "1" content = "购买成功"/>
+	<Text id = "114010" type = "1" content = "充值成功"/>
+  <Text id = "114011" type = "3" content = "每天竞技场可额外挑战[55ff00]{0}[-]次。"/>
+  <Text id = "114012" type = "3" content = "每天守护雅典娜可额外重置[55ff00]{0}[-]次。"/>
+  <Text id = "114013" type = "3" content = "守护雅典娜可获得额外[55ff00]{0}[-]的金币。"/> 
+	<!-- 114013的值显示为百分比的形式，如0.2则显示20% -->
+  <!-- Text id = "114014" type = "3" content = "7. 每天可幸运摇一摇[55ff00]{0}[-]次"/-->
+  <Text id = "114015" type = "3" content = "守护雅典娜中英雄可复活[55ff00]{0}[-]次。"/> 
+ 	<Text id = "114016" type = "3" content = "可扫荡守护雅典娜。"/> 
+ 	<Text id = "114017" type = "3" content = "每天密室逃脱可额外重置[55ff00]{0}[-]次。"/>   	
+ 	<Text id = "114018" type = "3" content = "可扫荡密室逃脱。"/> 
+  <Text id = "114019" type = "3" content = "每天商城最多可刷新[55ff00]{0}[-]次。"/>
+ 	<Text id = "114020" type = "3" content = "开启VIP商城。"/> 
+ 	<Text id = "114021" type = "3" content = "每天可重置关卡[55ff00]{0}[-]次。"/> 
+  <Text id = "114022" type = "3" content = "随时可开启自动释放技能。"/> 
+  <Text id = "114023" type = "3" content = "签到时部分道具可双倍领取。"/> 
+  <Text id = "114024" type = "3" content = "可购买基金。"/> 
+  <Text id = "114025" type = "3" content = "可购买VIP.%s超值礼包"/> 
+  <!-- 首充系统 -->
+  <Text id = "114101" type = "3" content = "只需充值6元，即可获得价值888元首充大礼包"/>
+  <Text id = "114102" type = "1" content = "领取成功"/>
+  <!-- 背包系统 -->
+  <Text id = "115001" type = "1" content = "扩充成功"/>
+  <Text id = "115002" type = "2" content = "是否花费%s#ty-zuanshi;扩充？"/>
+  <Text id = "111004" type = "6" content = "没有装备"/>
+  <Text id = "111005" type = "6" content = "没有道具"/>
+  <Text id = "111006" type = "6" content = "没有材料"/>
+  <Text id = "111007" type = "6" content = "没有物品"/>
+  <Text id = "111008" type = "2" content = "分解后可以得到[55ff00]%s[ffffff]个[55ff00]%s %s[ffffff]是否继续?"/>
+  <Text id = "111009" type = "6" content = "对不起您尚未拥有[55ff00]%s"/>
+  <!-- 家族朝拜 -->
+  <Text id = "116101" type = "1" content = "朝拜成功获得%s经验"/>
+  <Text id = "116102" type = "6" content = "贡献不足"/>
+  <Text id = "116103" type = "6" content = "每天只可朝拜一次哦"/>
+  <!-- 家族建设 -->
+  <Text id = "116201" type = "6" content = "建设成功"/>
+  <Text id = "116202" type = "6" content = "金币不足"/>
+  <Text id = "116203" type = "6" content = "钻石不足"/>
+  <Text id = "116204" type = "6" content = "每天只可建设一次哦"/>
+  <Text id = "116205" type = "2" content = "是否花费%s#ty-zuanshi;扩充？"/> 
+  <!-- 家族管理 -->
+  <Text id = "116301" type = "2" content = "是否解散家族？"/>
+  <Text id = "116302" type = "1" content = "解散成功"/>  
+  <Text id = "116303" type = "2" content = "是否退出家族？"/>
+  <Text id = "116304" type = "1" content = "成功退出"/>
+  <Text id = "116305" type = "1" content = "发布成功"/>
+  <Text id = "116306" type = "1" content = "成功添加族员"/>
+  <!-- 成员管理 -->
+  <Text id = "116401" type = "1" content = "已成功发送好友请求"/>
+  <Text id = "116402" type = "6" content = "不可重复添加好友"/>
+  <Text id = "116403" type = "6" content = "成功将%s提升为副族长"/>
+  <Text id = "116404" type = "6" content = "成功将%s降职为会员"/>
+  <Text id = "116405" type = "2" content = "是否将族长转让给%s？"/>
+  <Text id = "116406" type = "1" content = "转让成功"/>
+  <Text id = "116407" type = "2" content = "是否将%s踢出家族"/>
+  <Text id = "116408" type = "1" content = "成功踢出"/>
+  <!-- 申请家族 -->
+  <Text id = "116501" type = "1" content = "申请成功,请等待族长通过"/>
+  <Text id = "116502" type = "6" content = "该家族人数已满"/>
+  <Text id = "116503" type = "6" content = "不可重复申请同一家族"/>
+  <!-- 家族boss -->
+  <Text id = "116601" type = "6" content = "残酷的中立生物，无法驯服，传言还没有人活着出来。"/>
+  <Text id = "116602" type = "6" content = "不仅防高血后，还具有惊人的输出能力"/>
+  <Text id = "116603" type = "6" content = "今日次数已用完，请次日再来挑战"/>
+  <Text id = "116604" type = "6" content = "兑换成功"/>
+  <Text id = "116605" type = "6" content = "等级不够，无法创建！"/>
+  <Text id = "116606" type = "6" content = "徽章不足，无法开启！"/>
+  <!-- 家族战队 -->
+  <Text id = "2431" type = "1" content = "已经报名了战队英雄"/>
+  <Text id = "2432" type = "6" content = "尚未报名战队英雄，无法退队"/>
+  <Text id = "2433" type = "6" content = "英雄已经出战"/>
+  <Text id = "2434" type = "6" content = "英雄尚未出战"/>
+  <Text id = "2435" type = "6" content = "出战英雄已满"/>
+  <Text id = "2436" type = "6" content = "出战英雄有误"/>
+  <Text id = "2437" type = "6" content = "家族战间隔太小"/>
+  <Text id = "2438" type = "6" content = "当前不在家族战队报名阶段"/>
+  <Text id = "2439" type = "6" content = "当前不在家族战队防守阵容调整阶段"/>
+  <Text id = "2440" type = "6" content = "当前不在家族战队挑战阶段"/>  
+  
+  <Text id = "2441" type = "6" content = "今日已开启过家族boss，不能再开启"/>  
+  <Text id = "2442" type = "6" content = " 家族boss尚未被开启，所以不能挑战"/>  
+  <Text id = "2443" type = "6" content = "家族boss已被击杀，所以不能再挑战"/>  
+  <Text id = "2444" type = "6" content = "只有族长才有权开启家族boss"/>  
+  <Text id = "2445" type = "6" content = "家族当前等级不够开启boss"/> 
+  <Text id = "2446" type = "6" content = "徽章不够开启boss"/> 
+  
+  
+  <Text id = "116701" type = "6" content = "每人只可报名一次"/>
+  <Text id = "116702" type = "6" content = "报名周期已经截止"/>
+  <Text id = "116703" type = "6" content = "编辑战队时间已结束"/>
+  <Text id = "116704" type = "1" content = "报名成功"/> 
+  <Text id = "116705" type = "6" content = "每人只能报名一次"/>
+  <Text id = "116706" type = "1" content = "战队编辑成功"/> 
+  <Text id = "116707" type = "6" content = "战队编辑失败"/>
+  <Text id = "116708" type = "6" content = "参战英雄已满"/>
+  <Text id = "116709" type = "6" content = "该英雄已经存在"/> 
+  <Text id = "116710" type = "1" content = "布阵成功"/> 
+  <Text id = "116711" type = "6" content = "布阵失败"/>
+  <Text id = "116712" type = "6" content = "族长太懒了，当前队伍无英雄"/>
+  <Text id = "116713" type = "6" content = "挑战队伍人数不足4人！"/>
+  <!-- 领取体力 -->  
+  <Text id = "117001" type = "1" content = "领取成功"/>
+  <Text id = "117002" type = "6" content = "不可重复领取"/>
+  <!-- 家族成长 -->
+  <Text id = "117101" type = "1" content = "领取成功"/>
+  <Text id = "117102" type = "6" content = "不可重复领取"/>
+  <Text id = "117103" type = "6" content = "未达成条件，不可领取"/>  
+  <!-- 冲级奖励 -->
+  <Text id = "117201" type = "1" content = "领取成功"/>
+  <Text id = "117202" type = "6" content = "不可重复领取"/>
+  <Text id = "117203" type = "6" content = "未达成条件，不可领取"/>
+  <!-- 服务器家族错误提示 -->  
+  <Text id = "2401" type = "6" content = "家族不存在"/>
+  <Text id = "2402" type = "6" content = "玩家还没有加入家族"/>
+  <Text id = "2403" type = "6" content = "家族建设次数已满"/>
+  <Text id = "2404" type = "6" content = "家族朝拜次数已满"/>
+  <Text id = "2405" type = "6" content = "家族贡献度不足"/>
+  <Text id = "2406" type = "6" content = "还没到开放的时间段"/>
+  <Text id = "2407" type = "6" content = "创建家族失败"/>
+  <Text id = "2408" type = "6" content = "家族战队挑战次数已满"/>
+  <Text id = "2409" type = "6" content = "被操作玩家不在家族申请列表中"/>
+  <Text id = "2410" type = "6" content = "家族权限不足"/>
+  <Text id = "2411" type = "6" content = "玩家已加入某个家族"/>
+  <Text id = "2412" type = "6" content = "今天申请家族次数已用完"/>
+  <Text id = "2413" type = "6" content = "已经申请过此家族"/>
+  <Text id = "2414" type = "6" content = "家族副族长人数已满"/>
+  <Text id = "2415" type = "6" content = "已经报名了战队英雄"/>
+  <Text id = "2416" type = "6" content = "尚未报名战队英雄，无法退队"/>
+  <Text id = "2417" type = "6" content = "英雄已经出战"/>
+  <Text id = "2418" type = "6" content = "英雄尚未出战"/>
+  <Text id = "2419" type = "6" content = "出战英雄已满"/>
+  <Text id = "2420" type = "6" content = "出战英雄有误"/>
+  <Text id = "2421" type = "6" content = "请求的家族数据和本地不匹配（family_gid）"/>
+  <Text id = "2422" type = "6" content = "玩家不能自己操作自己的头衔"/>
+  <Text id = "2423" type = "6" content = "家族boss当日挑战次数已用完"/>
+  <Text id = "2424" type = "6" content = "角色的家族boss战斗已结束"/>
+  <Text id = "2425" type = "6" content = "敌方没有出战英雄"/>
+  <Text id = "2426" type = "6" content = "家族已解散"/>
+  <Text id = "2427" type = "6" content = "在惩罚时间内不能再申请"/>
+  <Text id = "2501" type = "6" content = "奖励已经领取"/>
+  <Text id = "2502" type = "6" content = "领取活动升级奖励时等级不足"/>
+  <Text id = "2503" type = "6" content = "领取活动升级奖励时家族人数不足"/>
+  <Text id = "2504" type = "6" content = "没有到领取体力的时间"/>
+  <Text id = "2505" type = "1" content = "体力已经领取"/>
+  <Text id = "2506" type = "1" content = "今日登陆奖励已被领取"/>
+  <Text id = "2507" type = "1" content = "新手奖励已被领取"/>
+  <Text id = "2508" type = "1" content = "新手奖励还未到领取时间"/> 
+  <Text id = "2509" type = "6" content = "没有该cdKey，请检查后再次输入"/> 
+  <Text id = "2510" type = "6" content = "cdKey已过期"/> 
+  <Text id = "2511" type = "6" content = "该cdKey已领取"/> 
+  <Text id = "2512" type = "6" content = "玩家已经领取过其他cdKey"/> 
+  <Text id = "2513" type = "6" content = "同样类型的cdkey领取次数太多"/> 
+  <Text id = "2514" type = "6" content = "当前不在活动时间段内"/> 
+  <Text id = "2515" type = "6" content = "领取每日充值活动奖励时，今日充值金额未达领取条件"/> 
+  <Text id = "2516" type = "6" content = "取累计充值活动奖励时，累计充值金额未达领取条件"/> 
+  <Text id = "2517" type = "6" content = "领取累计消费活动奖励时，累计消费金额未达领取条件"/> 
+  <Text id = "2518" type = "6" content = "今日下注抽奖活动次数已满"/>  
+  
+  <!-- 通用系统 -->
+  <Text id = "1110001" type = "4" content = "是否花费%s#jinbi1;补签？"/>
+  <Text id = "1110002" type = "4" content = "是否花费%s#ty-zuanshi;补签？"/>
+  <Text id = "1110003" type = "1" content = "英雄合成成功"/>
+  
+  <!-- 自定义（非系统定义提示） -->
+  <Text id = "1120001" type = "6" content = "星级数量不够，无法领取奖励！"/>
+  <Text id = "1120002" type = "1" content = "当前怒气值不足！"/>
+  
+  <Text id = "1130001" type = "1" content = "获得英雄[00ff00]%s[-]"/>
+  <Text id = "1130002" type = "1" content = "获得装备[00ff00]%s[-]"/>
+  <Text id = "1130003" type = "1" content = "获得技能[00ff00]%s[-]"/>
+  <Text id = "1130004" type = "1" content = "获得[ffff00]%s[-]金币"/>
+  <Text id = "1130005" type = "1" content = "获得[0000ff]%s[-]钻石"/>
+  <Text id = "1130006" type = "1" content = "获得[0000ff]%s[-]体力"/>
+  <Text id = "1130007" type = "1" content = "获得物品[00ff00]%s[-]"/>
+  
+  
+  <Text id = "1130008" type = "2" content = "钻石不足,是否前往充值？"/>
+  <Text id = "1130009" type = "2" content = "金币不足，是否补刀？"/>
+  <Text id = "1130010" type = "2" content = "体力不足，是否购买？"/>
+  <Text id = "1130011" type = "2" content = "关卡次数不足，是否重置？"/>
+  
+  <Text id = "1130012" type = "2" content = "再充值%s钻石，即可领取该奖励"/>
+  <Text id = "1130013" type = "2" content = "再消费%s钻石，即可领取该奖励"/>
+  
+  			<!-- 祭坛 -->
+  <Text id = "1140001" type = "2" content = "已拥有此英雄，已自动转化为对应灵魂石"/>
+
+  <Text id = "1181001" type = "6" content = "是否花费[00FF00]%s[-]#ty-zuanshi;,修改名字！"/>
+  <Text id = "1181002" type = "6" content = "首次修改名字免费！"/>
+  <Text id = "1110118" type = "2" content = "是否注销本次登陆？"/>
+
+  <!--溪谷对决-->
+  <Text id = "2801" type = "6" content = "暂时无法找到合适的对手"/>
+  <Text id = "3001" type = "6" content = "对手数据已过期，请重新进入以匹配新对手"/>
+  <Text id = "2801001" type = "6" content = "今天对手已经很累了，随后的战斗将没有任何收益。"/>
+</TextList>

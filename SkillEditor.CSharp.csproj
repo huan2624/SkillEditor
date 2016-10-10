@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E415F12A-135C-4C06-0E45-E6516C9F0E68}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Web v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>Assets\smcs.rsp</CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>WebPlayer:6</UnityBuildTarget>
+    <UnityVersion>5.3.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE;</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Actor\ActorManager.cs" />
+    <Compile Include="Assets\Scripts\Actor\ImpactBehaviour.cs" />
+    <Compile Include="Assets\Scripts\ActorBaseAttribute.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BaseActor.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\AchievementTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\ArenaRewardTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\BigLevelInfoTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\FamilyBasicConfTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\GameLevelConfTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\GeneralActivityTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\GiftBagTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\HeroAttributesTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\ItemConfigTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\LotteryTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\MoneyTreeTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\NPCInfoTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\NewRoleInfoTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\ObjectInfoTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\ResConfigTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\ShopTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\SkillDataInfoTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\StaminaTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\StoryTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\TaskTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\VIPPrivilegeTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicConfig\VIPRechargeTable.cs" />
+    <Compile Include="Assets\Scripts\BinFileSys\LogicFile.cs" />
+    <Compile Include="Assets\Scripts\CFanBody.cs" />
+    <Compile Include="Assets\Scripts\Control.cs" />
+    <Compile Include="Assets\Scripts\Core\CoreUtility.cs" />
+    <Compile Include="Assets\Scripts\Core\CoroutineMgr.cs" />
+    <Compile Include="Assets\Scripts\Core\IOUtil.cs" />
+    <Compile Include="Assets\Scripts\Core\Log.cs" />
+    <Compile Include="Assets\Scripts\Core\ManifestMgr.cs" />
+    <Compile Include="Assets\Scripts\Core\MemoryStreamUtil.cs" />
+    <Compile Include="Assets\Scripts\Core\PathBuilder.cs" />
+    <Compile Include="Assets\Scripts\Core\RecordCSV.cs" />
+    <Compile Include="Assets\Scripts\Core\StringHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\TSingleton.cs" />
+    <Compile Include="Assets\Scripts\Core\TimeUtil.cs" />
+    <Compile Include="Assets\Scripts\Debuger.cs" />
+    <Compile Include="Assets\Scripts\Effect\AvatarDefine.cs" />
+    <Compile Include="Assets\Scripts\Effect\EffectBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Effect\EffectLifeController.cs" />
+    <Compile Include="Assets\Scripts\Effect\EffectManager.cs" />
+    <Compile Include="Assets\Scripts\FSM\Behavior\AIDataReader.cs" />
+    <Compile Include="Assets\Scripts\FSM\Behavior\BaseBehavior.cs" />
+    <Compile Include="Assets\Scripts\FSM\FSMManager.cs" />
+    <Compile Include="Assets\Scripts\FSM\FSMNode.cs" />
+    <Compile Include="Assets\Scripts\FSM\State\BaseState.cs" />
+    <Compile Include="Assets\Scripts\FSM\State\StateAttack.cs" />
+    <Compile Include="Assets\Scripts\FSM\State\StateHitNormal.cs" />
+    <Compile Include="Assets\Scripts\FSM\State\StateIdle.cs" />
+    <Compile Include="Assets\Scripts\FSM\State\StateWalk.cs" />
+    <Compile Include="Assets\Scripts\FanDisp.cs" />
+    <Compile Include="Assets\Scripts\FanMesh.cs" />
+    <Compile Include="Assets\Scripts\LogManager.cs" />
+    <Compile Include="Assets\Scripts\MecanimBehaviour.cs" />
+    <Compile Include="Assets\Scripts\MoveBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Network\Http.cs" />
+    <Compile Include="Assets\Scripts\Network\MiniJSON.cs" />
+    <Compile Include="Assets\Scripts\Network\ProtocolUtility.cs" />
+    <Compile Include="Assets\Scripts\Network\TConnd\CSocket.cs" />
+    <Compile Include="Assets\Scripts\Network\TConnd\ShortConnectSocket.cs" />
+    <Compile Include="Assets\Scripts\Network\TConnd\TConndServerHandler.cs" />
+    <Compile Include="Assets\Scripts\Network\TConnd\TConndUtil.cs" />
+    <Compile Include="Assets\Scripts\Network\TConnd\tconnsecdef.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TResHeadAll.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TdrBuf.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TdrBufUtil.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TdrError.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TdrTime.cs" />
+    <Compile Include="Assets\Scripts\Network\Tdr\TdrTypeUtil.cs" />
+    <Compile Include="Assets\Scripts\Network\WTLogin\WTLoginPlugin.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\BclHelpers.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\BufferExtension.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\BufferPool.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\CallbackAttributes.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Compiler\CompilerContext.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Compiler\CompilerDelegates.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Compiler\Local.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\DataFormat.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Extensible.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ExtensibleUtil.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\GlobalSuppressions.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Helpers.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\IExtensible.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\IExtension.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ImplicitFields.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\KeyValuePairProxy.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\AttributeMap.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\BasicList.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\CallbackSet.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\MetaType.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\RuntimeTypeModel.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\SubType.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\TypeFormatEventArgs.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\TypeModel.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Meta\ValueMember.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\NetObjectCache.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\PrefixStyle.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoContractAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoConverterAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoEnumAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoException.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoIgnoreAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoIncludeAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoMemberAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoReader.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ProtoWriter.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\SerializationContext.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ArrayDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\BlobSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\BooleanSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ByteSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\CharSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\CompiledSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\DateTimeSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\DecimalSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\DefaultValueDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\DoubleSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\EnumSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\FieldDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\GuidSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\IProtoSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\IProtoTypeSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ISerializerProxy.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ImmutableCollectionDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\Int16Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\Int32Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\Int64Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\KeyValuePairDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ListDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\MemberSpecifiedDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\NetObjectSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\NullDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ParseableSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\PropertyDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\ProtoDecoratorBase.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\SByteSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\SingleSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\StringSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\SubItemSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\SurrogateSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\SystemTypeSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\TagDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\TimeSpanSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\TupleSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\TypeSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\UInt16Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\UInt32Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\UInt64Serializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\Serializers\UriDecorator.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ServiceModel\ProtoBehaviorAttribute.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ServiceModel\ProtoBehaviorExtensionElement.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ServiceModel\ProtoEndpointBehavior.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ServiceModel\ProtoOperationBehavior.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\ServiceModel\XmlProtoSerializer.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\SubItemToken.cs" />
+    <Compile Include="Assets\Scripts\Protobuf\WireType.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\AudioElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\BaseSkillElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\DirectImpactElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\EffectElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\EffectFollowController.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\FanDispElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\ShootPointElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\Elements\TrackingBulletElementHandler.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillDataReader.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillEventManager.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillImpactManager.cs" />
+    <Compile Include="Assets\Scripts\Skill\SkillManager.cs" />
+    <Compile Include="Assets\Scripts\Skill\VO\CastSkillInfo.cs" />
+    <Compile Include="Assets\Scripts\Skill\VO\SkillDisplayData.cs" />
+    <Compile Include="Assets\Scripts\SkillBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SkillPreview.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protobuf\dgproto.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\account_proto.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\comm_macro.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\cs_comm_def.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\cs_head.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\net_macros.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\net_metalib.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_battle.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_chat.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_equip.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_friend.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_gm.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_mail.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_notice.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_notify.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_pet.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_rank.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_role.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_shop.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_task.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\proto_cs_verify.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\cs_protocol\wl_proto.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\AIConfig.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\AchievementData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\BubbleUpConfig.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\BuffBuy.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\BuffProperty.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\BuffRes.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\BuffVisualProperty.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\Chat.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\GameTextMgr.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\HeroBasicAttributes.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\IMEI.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ItemTriggerInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ItemTriggerInfoKeyWords.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\LevelBinData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\LotteryBinData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\MailConfigData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\MoneyTree.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\NPCInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\NetConfigDesc.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\NewRoleInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ObjectInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ObjectInfoKeyWords.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\PetConfigData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ResConfig.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\RoleCreateDescInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\RoleGuide.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\RoleInfo.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\SceneConfigData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ShareDataConfig.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\ShopConfigData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\SkillDataBinData.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\TaskResConf.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\activity_conf.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\arena_conf.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\athena.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\boss_battle.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\family_conf.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\item_conf_client.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\realityroom_refresh_monster.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\res_comm_macro.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\reward.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\room_escape_limit.cs" />
+    <Compile Include="Assets\Scripts\TDRExported\localdata\valleysDuel.cs" />
+    <Compile Include="Assets\Scripts\Utility\CommHelper.cs" />
+    <Compile Include="Assets\Scripts\Utility\SkillAttribute.cs" />
+    <Compile Include="Assets\Scripts\Utility\WLCollision.cs" />
+    <Compile Include="Assets\Scripts\Utility\XMLHandler.cs" />
+    <Compile Include="Assets\villarger_B_Boy\scripts\characterRotate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Editor\Resources\AMIrisShape.shader" />
+    <None Include="Assets\Models\Character01\帧数.txt" />
+    <None Include="Assets\Resources\LocalConfig\AI\AIText.xml" />
+    <None Include="Assets\Resources\LocalConfig\AI\Tutorial.xml" />
+    <None Include="Assets\Resources\LocalConfig\Loading\LoadingConfig.xml" />
+    <None Include="Assets\Resources\LocalConfig\Text\Text.xml" />
+    <None Include="Assets\Scripts\TDRExported\cs_protocol\README.txt" />
+    <None Include="Assets\villarger_B_Boy\ReadMe [V 1.4]  02 06.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
